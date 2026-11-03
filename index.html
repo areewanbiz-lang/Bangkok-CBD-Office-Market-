@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok CBD Commercial Office Rental Market — Master Quantitative Research Dataset</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1E293B',
+                            900: '#0F172A',
+                            950: '#020617',
+                        },
+                        teal: {
+                            400: '#2DD4BF',
+                            500: '#14B8A6',
+                            600: '#0D9488',
+                        },
+                        brandBlue: {
+                            400: '#60A5FA',
+                            500: '#3B82F6',
+                            600: '#2563EB',
+                        },
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                        },
+                        purple: {
+                            400: '#C084FC',
+                            500: '#A855F7',
+                            600: '#9333EA',
+                            950: '#2e1065'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 420px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 370px;
+            }
+        }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card-accent {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+            border: 1px solid rgba(168, 85, 247, 0.25);
+        }
+
+        .accent-gold { color:#7CC4FF !important; font-weight:700 !important; text-shadow:0 0 4px rgba(124,196,255,0.9), 0 0 10px rgba(124,196,255,0.65), 0 0 20px rgba(124,196,255,0.4) !important; }
+        a.accent-gold:hover { color:#FFFFFF !important; text-shadow:none; }
+        .nav-gold { color:#FFC83D !important; font-weight:800 !important; }
+        a.nav-gold:hover { color:#FFFFFF !important; }
+        .vivid-white { color:#FFFFFF !important; font-weight:800 !important; text-shadow:0 0 6px rgba(255,255,255,.22); }
+        a.vivid-white:hover { color:#5EEAD4 !important; }
+        .hero-sub { display:block; color:#2DD4BF; padding-top:.15em; padding-bottom:.1em; }
+        @page { size:A4; margin:8mm; }
+        @media print {
+            html, body { -webkit-print-color-adjust:exact; print-color-adjust:exact; background:#020617 !important; }
+            header { position:static !important; }
+            section, .glass-card, .rounded-2xl, .rounded-xl, .chart-container, tr { break-inside:avoid; }
+            thead { display:table-header-group; }
+            h2, h3 { break-after:avoid; }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
+
+    <div class="bg-navy-950 border-b border-slate-800/60 text-center text-[16px] font-semibold text-white py-2.5 tracking-wide">
+        Prepared by <span class="accent-gold">Areewan C</span> &middot; Candidate – Head of Property Management - GEURT FAR CO., LTD.
+    </div>
+    <header class="sticky top-0 z-50 bg-navy-950/95 backdrop-blur-md text-white border-b border-slate-800/80 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between min-h-[4rem] py-2 gap-3">
+                <div class="flex items-center space-x-3 shrink-0">
+                    <div class="bg-gradient-to-r from-purple-600 via-brandBlue-600 to-teal-400 px-3 py-2 rounded-xl text-white font-black text-base leading-none shadow-lg shadow-purple-900/40 flex items-center space-x-1.5">
+                        <i class="fa-solid fa-building text-sm"></i>
+                        <span>CBD</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-sm sm:text-base tracking-tight block text-white leading-tight">Bangkok CBD Commercial Office Market</span>
+                        <span class="text-[11px] text-teal-400 block font-semibold">Master Quantitative Research Dataset</span>
+                    </div>
+                </div>
+                <nav class="hidden lg:flex flex-wrap justify-end items-center text-center leading-tight text-[10.5px] xl:text-[11px] font-semibold text-white whitespace-nowrap">
+                    <a href="#section-macro" class="font-extrabold nav-gold transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">01. Macro<br>Supply</a>
+                    <a href="#section-methodology" class="font-extrabold vivid-white transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">02. METHODOLOGY<br>RECONCILIATION</a>
+                    <a href="#section-01" class="font-extrabold nav-gold transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">03.<br>Supply</a>
+                    <a href="#section-02" class="font-extrabold vivid-white transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">04. Grade<br>Tiers</a>
+                    <a href="#section-03" class="font-extrabold nav-gold transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">05.<br>SUB-MARKET</a>
+                    <a href="#section-04" class="font-extrabold vivid-white transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">06.<br>Demographics</a>
+                    <a href="#section-05" class="font-extrabold nav-gold transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">07. ASOKE -<br>CBD</a>
+                    <a href="#section-06" class="font-extrabold vivid-white transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">08. Lease<br>Calculator</a>
+                    <a href="#section-outlook" class="font-extrabold nav-gold transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">09. MARKET<br>OUTLOOK</a>
+                    <a href="#section-07" class="font-extrabold vivid-white transition-colors px-1.5 py-1.5 rounded-lg hover:bg-slate-800/65">10. SWOT &amp;<br>PESTEL</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+        <div class="flex justify-start">
+            <a href="https://sites.google.com/d/1-1nBL6mDhlvPggqkM4lM4QMk797tHVfA/p/11_h3vmYs38OZiYbIV4inkIBzPWRNjrU3/edit" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 cursor-pointer bg-white text-slate-900 border-2 border-teal-400 shadow-xl shadow-teal-500/25 px-6 py-3 rounded-xl text-sm sm:text-base font-extrabold transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl hover:shadow-teal-400/50 hover:bg-teal-50">
+                <span>If you are viewing this report in PDF format, click here to open the interactive version.</span>
+                <i class="fa-solid fa-hand-pointer text-teal-600" style="font-size:2rem;line-height:1;transform:rotate(-67.5deg);display:inline-block;"></i>
+            </a>
+        </div>
+
+        <section class="space-y-6">
+            <div class="bg-gradient-to-br from-navy-950 via-slate-900 to-purple-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden border border-purple-900/40">
+                <div class="relative z-10 max-w-5xl">
+                    <div class="inline-flex items-center space-x-2 bg-purple-500/20 text-purple-300 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs font-bold mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Master Quantitative Research Dataset</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-4">
+                        Bangkok CBD Commercial Office Rental Market:
+                        <span class="hero-sub">Market Dynamics &amp; Compositional Shift</span>
+                    </h1>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Comprehensive dataset analyzing Bangkok's historic 1.4M sq m supply wave, ESG flight-to-quality dynamics, sector leasing preferences, unit size velocity, and Asoke corridor asset benchmarking (including GMM Grammy Place).
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-amber-500 p-5 rounded-2xl text-xs sm:text-sm space-y-2" style="background:#24170a;border:1px solid rgba(245,158,11,.35);">
+                <div class="flex items-center space-x-2 font-bold text-amber-400 uppercase tracking-wider text-xs">
+                    <i class="fa-solid fa-triangle-exclamation text-base"></i>
+                    <span>Key Context Marker: Compositional Pricing Illusion</span>
+                </div>
+                <p class="text-slate-200 leading-relaxed">
+                    Citywide asking rents rose to <strong>THB 858/sq m</strong> due to ultra-prime Grade A+ launches (THB 1,200–1,500/sq m), despite market vacancy rising to <strong>23.5%</strong> and net effective discounts reaching <strong>20%–30%</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="glass-card rounded-2xl p-5 shadow-lg border-l-4 border-l-brandBlue-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Tracked Market Supply</span>
+                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-bold">Q2 2026</span>
+                    </div>
+                    <div class="text-2xl sm:text-3xl font-black text-white mb-1">6.75M <span class="text-sm font-semibold text-slate-400">sq m</span></div>
+                    <p class="text-xs text-brandBlue-400 font-bold flex items-center">
+                        <i class="fa-solid fa-caret-up mr-1"></i> +3.2% QoQ Expansion in Q2 2026
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-5 shadow-lg border-l-4 border-l-amber-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">CBD Avg Asking Rent</span>
+                        <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-bold">Benchmark</span>
+                    </div>
+                    <div class="text-2xl sm:text-3xl font-black text-white mb-1">THB 977 <span class="text-sm font-semibold text-slate-400">/ sq m</span></div>
+                    <p class="text-xs text-amber-400 font-bold flex items-center">
+                        <i class="fa-solid fa-caret-up mr-1"></i> +0.7% QoQ Compositional Elev.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-5 shadow-lg border-l-4 border-l-purple-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">CBD Grade A Vacancy</span>
+                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-bold">Market High</span>
+                    </div>
+                    <div class="text-2xl sm:text-3xl font-black text-white mb-1">23.5%</div>
+                    <p class="text-xs text-purple-300 font-bold flex items-center">
+                        <i class="fa-solid fa-chart-line mr-1"></i> Multi-Year High Due to Supply
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-5 shadow-lg border-l-4 border-l-teal-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Dominant Sector Demand</span>
+                        <span class="text-[10px] bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded font-bold">26% Banking</span>
+                    </div>
+                    <div class="text-2xl sm:text-3xl font-black text-white mb-1">Banking & Fin</div>
+                    <p class="text-xs text-teal-400 font-bold flex items-center">
+                        <i class="fa-solid fa-arrows-to-eye mr-1"></i> MNC Led Flight-to-Quality
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="glass-card-accent rounded-2xl p-5 shadow-lg border-l-4 border-l-purple-500">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">GMM Grammy Place Rent</div>
+                    <div class="text-2xl font-black text-white mb-0.5">THB 680–750</div>
+                    <div class="text-xs font-bold text-purple-300">Market Asking Rent</div>
+                    <div class="text-[11px] text-slate-400 mt-1">(Asoke Corridor Baseline)</div>
+                </div>
+
+                <div class="glass-card-accent rounded-2xl p-5 shadow-lg border-l-4 border-l-teal-500">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Grade A Rent Gap</div>
+                    <div class="text-2xl font-black text-white mb-0.5">35% – 45%</div>
+                    <div class="text-xs font-bold text-teal-400">Cost Advantage</div>
+                    <div class="text-[11px] text-slate-400 mt-1">vs Prime Grade A Towers</div>
+                </div>
+
+                <div class="glass-card-accent rounded-2xl p-5 shadow-lg border-l-4 border-l-brandBlue-500">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Asoke Cluster Occupancy</div>
+                    <div class="text-2xl font-black text-white mb-0.5">80.0%</div>
+                    <div class="text-xs font-bold text-brandBlue-400">Transit Hub</div>
+                    <div class="text-[11px] text-slate-400 mt-1">(BTS Asoke / MRT Interchange)</div>
+                </div>
+
+                <div class="glass-card-accent rounded-2xl p-5 shadow-lg border-l-4 border-l-amber-500">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">High Velocity Size Share</div>
+                    <div class="text-2xl font-black text-white mb-0.5">68% <span class="text-xs font-normal">&lt; 600 sq m</span></div>
+                    <div class="text-xs font-bold text-amber-400">Sub-Unit Demand</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Highest Transaction Velocity</div>
+                </div>
+            </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="glass-card rounded-2xl p-5 shadow-lg border-l-4 border-l-teal-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Green Stock Share</span>
+                        <span class="text-[10px] bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded font-bold">Q2 2026</span>
+                    </div>
+                    <div class="text-2xl sm:text-3xl font-black text-white mb-1">2.95M <span class="text-sm font-semibold text-slate-400">sq m</span></div>
+                    <p class="text-xs text-teal-400 font-bold flex items-center">
+                        <i class="fa-solid fa-leaf mr-1"></i> 43.7% of Market Inventory
+                    </p>
+                </div>
+
+                <div class="glass-card-accent rounded-2xl p-5 shadow-lg border-l-4 border-l-amber-500">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">EV & Digital FDI Inflow</div>
+                    <div class="text-2xl font-black text-white mb-0.5">&gt;$3.0 Billion</div>
+                    <div class="text-xs font-bold text-amber-400">Key Demand Driver</div>
+                    <div class="text-[11px] text-slate-400 mt-1">ZDATA, Sunwoda, BYD, KDDI</div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-5 shadow-lg border-l-4 border-l-brandBlue-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Gross Take-Up</span>
+                        <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-bold">Q2 2026</span>
+                    </div>
+                    <div class="text-2xl sm:text-3xl font-black text-white mb-1">134,000 <span class="text-sm font-semibold text-slate-400">sq m</span></div>
+                    <p class="text-xs text-brandBlue-400 font-bold flex items-center">
+                        <i class="fa-solid fa-arrow-trend-up mr-1"></i> Gross Leasing Volume in Q2 2026
+                    </p>
+                </div>
+
+                <div class="glass-card-accent rounded-2xl p-5 shadow-lg border-l-4 border-l-purple-500">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Effective Rent Discount</div>
+                    <div class="text-2xl font-black text-white mb-0.5">20% – 30%</div>
+                    <div class="text-xs font-bold text-purple-300">Rent-Free & Capex Concessions</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Below Headline Asking Rents</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-macro" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-6">
+            <div class="flex items-center space-x-3">
+                <span class="bg-teal-500/20 text-teal-300 font-bold px-3 py-1 rounded-full text-xs border border-teal-500/30">SECTION 01</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• MACROECONOMIC HEADWINDS & DEMAND PILLARS</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">Macroeconomic Drivers & Concentrated Occupier Demand</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Following GDP growth of 2.5% in 2024 and 2.4% in 2025, Thailand's 2026 economic growth was revised by the Bank of Thailand (BOT) to 2.3%, while KKP Research downgraded estimates to 1.3% amid 3.0% inflation. Four key headwinds have constrained tenant expansion: energy price volatility, softer export values ahead of U.S. reciprocal tariffs, a 8.1% YoY decline in Q2 2026 tourism arrivals (6.6 million), and public debt approaching the 70% GDP ceiling. Consequently, BOT's Business Sentiment Index (BSI) registered 46.1 in Q2 2026, keeping CFOs cautious.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="flex items-center space-x-2 text-teal-400 font-bold text-sm">
+                        <i class="fa-solid fa-leaf text-base"></i>
+                        <span>1. MNC Flight-to-Quality & ESG</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Multinationals bound by net-zero targets require LEED/WELL space. JLL reports <strong>70%–75% of MNCs</strong> need floor plates &gt;1,000 sq m. Key moves: HSBC Thailand & Baker McKenzie to One Bangkok T4 (Fl 30-33), GSK to Central Park Offices.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="flex items-center space-x-2 text-brandBlue-400 font-bold text-sm">
+                        <i class="fa-solid fa-charging-station text-base"></i>
+                        <span>2. Chinese EV & Digital Inflows</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        BOI incentives and trade friction drove FDI into Thailand. ZDATA ($1.22B) & KDDI ($230M) digital investments, plus Sunwoda ($1.54B battery plant) and BYD, generate sales/HQ demand. BEV registrations surged 80% in 2025 (120,301 units, 19.4% market share).
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="flex items-center space-x-2 text-amber-400 font-bold text-sm">
+                        <i class="fa-solid fa-scissors text-base"></i>
+                        <span>3. SME Cost Rationalization</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Domestic SMEs are executing overhead rationalization, migrating out of prime central corridors toward transit-linked non-CBD sub-markets or Grade B/C spaces (averaging THB 542/sq m) to minimize fixed real estate expenditure.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-methodology" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-6">
+            <div class="flex items-center space-x-3">
+                <span class="bg-purple-500/20 text-purple-300 font-bold px-3 py-1 rounded-full text-xs border border-purple-500/30">SECTION 02</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• METHODOLOGY RECONCILIATION</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">Institutional Research Scope & Data Reconciliation Matrix</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Evaluating the Bangkok commercial market requires reconciling distinct inventory definitions across major property consultancies. While directional trends align, absolute supply and vacancy figures vary based on whether tracking covers institutional for-rent stock, citywide commercial buildings, or total BMR inventory inclusive of owner-occupied space.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto border border-slate-800 rounded-2xl">
+                <table class="w-full text-xs text-left text-slate-300 border-collapse">
+                    <thead class="bg-slate-900 text-slate-200 uppercase text-[11px] tracking-wider border-b border-slate-800">
+                        <tr>
+                            <th class="p-3.5">Research Institution</th>
+                            <th class="p-3.5">Geographic & Asset Scope</th>
+                            <th class="p-3.5">Tracked Total Supply (2025–2026)</th>
+                            <th class="p-3.5">CBD Grade A Scope</th>
+                            <th class="p-3.5">Reported Occupancy / Vacancy (2026)</th>
+                            <th class="p-3.5">Key Benchmark Rent (THB / sq m / mo)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 bg-slate-950/60">
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-brandBlue-400">Knight Frank Thailand</td>
+                            <td class="p-3.5">Bangkok Commercial For-Rent Stock (Grades A, B, C)</td>
+                            <td class="p-3.5 font-semibold text-white">6.49M sq m (Q4 2025) → 6.75M sq m (Q2 2026)</td>
+                            <td class="p-3.5">Concentrated within ~3.5M+ sq m CBD basket</td>
+                            <td class="p-3.5 font-semibold text-amber-300">77.7% Occ (Q1 2026) → 76.4% Occ (Q2 2026); 75.0% CBD Occ</td>
+                            <td class="p-3.5">Market Avg: THB 858 | CBD Avg: THB 977 | Grade A: THB 1,268</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-purple-300">CBRE Thailand</td>
+                            <td class="p-3.5">Bangkok Institutional For-Rent Office Basket</td>
+                            <td class="p-3.5 font-semibold text-white">+479,812 sq m added in 2025</td>
+                            <td class="p-3.5">Core Downtown CBD Grade A/B</td>
+                            <td class="p-3.5 font-semibold text-teal-300">79.3% Occ (Q1 2026) → 79.6% Occ (Q2 2026)</td>
+                            <td class="p-3.5">Prime assets outperforming; downward pressure on aging stock</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-teal-400">Cushman & Wakefield</td>
+                            <td class="p-3.5">Citywide Commercial Stock & CBD Grade A Basket</td>
+                            <td class="p-3.5 font-semibold text-white">8.99M sq m Total Citywide (Q4 2025)</td>
+                            <td class="p-3.5">2.53M sq m (Q4 2025 – Q3 2026)</td>
+                            <td class="p-3.5 font-semibold text-purple-300">23.8% CBD Gr. A Vac (Q4 25) → 22.8% (Q2 26) → 23.5% (Q3 26)</td>
+                            <td class="p-3.5">CBD Grade A Gross Rent: THB 943 (Q4 25) → THB 941 (Q3 2026)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-amber-400">JLL Thailand</td>
+                            <td class="p-3.5">Prime / Institutional Bangkok Office Basket</td>
+                            <td class="p-3.5 font-semibold text-white">Prime Stock (including refurbished re-entries)</td>
+                            <td class="p-3.5">Prime CBD Grade A / A+</td>
+                            <td class="p-3.5 font-semibold text-amber-300">30.1% Vacancy Rate (Q2 2026)</td>
+                            <td class="p-3.5">Prime rents stable; rising renewal discounts and concessions</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-slate-300">Krungsri Research</td>
+                            <td class="p-3.5">Total BMR Stock (All Grades + Owner-Occupied)</td>
+                            <td class="p-3.5 font-semibold text-white">10.3M sq m (2025) → 10.4M sq m (2026F)</td>
+                            <td class="p-3.5">10% Grade A+, 19% Grade A, 71% Grade B</td>
+                            <td class="p-3.5 font-semibold text-teal-300">78.6% Occ (2025) → 79.0% Occ (2026F)</td>
+                            <td class="p-3.5">New Grade A+ priced at 20%–30% effective discount to legacy leases</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="section-01" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-6">
+            <div class="flex items-center space-x-3">
+                <span class="bg-teal-500/20 text-teal-300 font-bold px-3 py-1 rounded-full text-xs border border-teal-500/30">SECTION 03</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• MACRO SUPPLY & ESG ABSORPTION</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">Structural Bifurcation: The ESG Flight-to-Quality & Zero-Sum Cannibalization</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Bangkok's commercial office market is experiencing a structural realignment rather than net expansion. High gross leasing volumes (134,000 sq m in Q2 2026) represent zero-sum relocation from aging, non-certified stock into new green-certified Grade A/A+ developments. Certified green stock expanded to 2.95 million sq m (43.7% of total market supply) by Q2 2026, capturing 100% of net market absorption.
+                </p>
+            </div>
+
+                        <div class="bg-slate-900/90 p-5 sm:p-6 rounded-2xl border border-teal-500/30 space-y-2">
+                <div class="text-[10px] font-bold uppercase tracking-widest text-teal-400">Structural Divergence</div>
+                <h3 class="font-bold text-white text-lg">ESG Mandates & Zero-Sum Cannibalization</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Market absorption in Bangkok is heavily bifurcated. Multinational corporations bound by corporate net-zero pledges are migrating en masse into LEED- and WELL-certified prime buildings. This movement is not an organic expansion of total headcount, but a <strong class="text-teal-300">zero-sum cannibalization</strong> where green-certified stock gains space while aging non-green buildings suffer net tenant contraction.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-2">
+                <div class="bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 space-y-3">
+                    <div>
+                        <h3 class="font-bold text-white text-base">Quarterly Supply Wave vs. Market Occupancy Rate</h3>
+                        <p class="text-xs text-slate-400">Tracked Bangkok commercial supply expansion vs citywide occupancy (2024–2026)</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="supplyWaveChart"></canvas>
+                    </div>
+                    <p class="text-xs text-slate-300 bg-slate-950/80 p-3 rounded-xl border border-slate-800/80">
+                        <strong class="text-teal-400">Context Takeaway:</strong> Completions of massive mega-projects (such as One Bangkok Phase 1 and Dusit Central Park) expanded total inventory to 6.75M sq m, compressing overall occupancy below the 80% equilibrium mark to 76.4% in Q2 2026.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 space-y-3">
+                    <div>
+                        <h3 class="font-bold text-white text-base">Net Absorption Split: Green vs. Non-Green Stock</h3>
+                        <p class="text-xs text-slate-400">Quarterly net occupied space changes (sq m) highlighting zero-sum cannibalization</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="greenNetAbsorptionChart"></canvas>
+                    </div>
+                    <p class="text-xs text-slate-300 bg-slate-950/80 p-3 rounded-xl border border-slate-800/80">
+                        <strong class="text-teal-400">Context Takeaway:</strong> In Q2 2026, green-certified stock gained +92,000 sq m of positive net absorption, while non-green certified buildings suffered a net contraction of -16,000 sq m due to multinational ESG requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-4">
+                <h3 class="font-bold text-white text-base">Quarterly Supply, Take-up & Green ESG Absorption Data Breakdown (Q4 2024 – Q2 2026)</h3>
+                <div class="overflow-x-auto border border-slate-800 rounded-2xl">
+                    <table class="w-full text-xs text-left text-slate-300 border-collapse">
+                        <thead class="bg-slate-900 text-slate-200 uppercase text-[11px] tracking-wider border-b border-slate-800">
+                            <tr>
+                                <th class="p-3">Period</th>
+                                <th class="p-3">Total Supply (sq m)</th>
+                                <th class="p-3">Green-Certified Stock (sq m / % Share)</th>
+                                <th class="p-3">Gross Take-Up (sq m)</th>
+                                <th class="p-3">Total Net Absorption</th>
+                                <th class="p-3">Green Net Absorption</th>
+                                <th class="p-3">Non-Green Net Abs.</th>
+                                <th class="p-3">Market Asking Rent</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800 bg-slate-950/60">
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Q4 2024</td>
+                                <td class="p-3">6,310,000</td>
+                                <td class="p-3">2,000,000 (32.0%)</td>
+                                <td class="p-3">~95,000</td>
+                                <td class="p-3 text-teal-400">+48,000 sq m</td>
+                                <td class="p-3 text-teal-300">+50,000 sq m</td>
+                                <td class="p-3 text-rose-400">-2,000 sq m</td>
+                                <td class="p-3">THB 843 / sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Q1 2025</td>
+                                <td class="p-3">6,314,000</td>
+                                <td class="p-3">2,100,000 (33.3%)</td>
+                                <td class="p-3">~96,000</td>
+                                <td class="p-3 text-teal-400">+31,000 sq m</td>
+                                <td class="p-3 text-teal-300">+51,000 sq m</td>
+                                <td class="p-3 text-rose-400">-17,000 sq m</td>
+                                <td class="p-3">THB 845 / sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Q2 2025</td>
+                                <td class="p-3">6,420,000</td>
+                                <td class="p-3">2,280,000 (35.5%)</td>
+                                <td class="p-3">~200,000</td>
+                                <td class="p-3 text-teal-400">+67,000 sq m</td>
+                                <td class="p-3 text-teal-300">+115,000 sq m</td>
+                                <td class="p-3 text-rose-400">-48,000 sq m</td>
+                                <td class="p-3">THB 847 / sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Q3 2025</td>
+                                <td class="p-3">6,490,000</td>
+                                <td class="p-3">2,350,000 (36.2%)</td>
+                                <td class="p-3">96,000</td>
+                                <td class="p-3 text-teal-400">+37,000 sq m</td>
+                                <td class="p-3 text-teal-300">+55,000 sq m</td>
+                                <td class="p-3 text-rose-400">-18,000 sq m</td>
+                                <td class="p-3">THB 853 / sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Q4 2025</td>
+                                <td class="p-3">6,490,000</td>
+                                <td class="p-3">2,350,000 (36.2%)</td>
+                                <td class="p-3">102,000</td>
+                                <td class="p-3 text-teal-400">+24,800 sq m</td>
+                                <td class="p-3 text-teal-300">+18,500 sq m</td>
+                                <td class="p-3 text-amber-300">+6,300 sq m</td>
+                                <td class="p-3">THB 850 / sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Q1 2026</td>
+                                <td class="p-3">6,543,000</td>
+                                <td class="p-3">2,760,000 (42.2%)</td>
+                                <td class="p-3">111,000</td>
+                                <td class="p-3 text-teal-400">+70,000 sq m</td>
+                                <td class="p-3 text-teal-300">Majority Green</td>
+                                <td class="p-3 text-slate-400">Flat / Negative</td>
+                                <td class="p-3">THB 847 / sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60 bg-purple-950/20">
+                                <td class="p-3 font-bold text-purple-300">Q2 2026</td>
+                                <td class="p-3 font-semibold text-white">6,750,000</td>
+                                <td class="p-3 font-semibold text-teal-300">2,950,000 (43.7%)</td>
+                                <td class="p-3 font-bold text-white">134,000</td>
+                                <td class="p-3 font-bold text-teal-400">+76,000 sq m</td>
+                                <td class="p-3 font-bold text-teal-300">+92,000 sq m</td>
+                                <td class="p-3 font-bold text-rose-400">-16,000 sq m</td>
+                                <td class="p-3 font-bold text-amber-300">THB 858 / sq m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-02" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-6">
+            <div class="flex items-center space-x-3">
+                <span class="bg-purple-500/20 text-purple-300 font-bold px-3 py-1 rounded-full text-xs border border-purple-500/30">SECTION 04</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• BUILDING GRADE STRATIFICATION</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">"The Squeezed Middle" Paradox Across Office Building Tiers</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Granular market data exposes a counter-intuitive structural stratification: Grade C offices maintain the highest occupancy rate in Bangkok (79.0%) due to zero new supply additions and cost-conscious domestic SMEs. Conversely, Grade B assets suffer the lowest occupancy (74.0%), squeezed between discounted Grade A net effective rates and budget-focused Grade C alternatives.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-6 bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="font-bold text-white text-base mb-1">Asking Rent vs. Occupancy Rate by Building Grade (Q2 2026)</h3>
+                        <p class="text-xs text-slate-400 mb-4">Comparing benchmark asking rents (THB/sq m/mo) against occupied share (%)</p>
+                        <div class="chart-container">
+                            <canvas id="gradeStratificationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-l-4 border-l-brandBlue-500 border-y border-r border-slate-800 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-bold text-white text-base">Grade A / A+ Tier</h4>
+                            <span class="text-xs font-bold text-brandBlue-400 bg-blue-900/40 px-2.5 py-1 rounded-full">THB 1,268 / sq m</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong>Occupancy: 77.0%. Vacancy: 23.5%.</strong> Captures all multinational flight-to-quality and corporate net-zero relocations, though headline occupancy is temporarily diluted by massive 2024–2026 new supply additions.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-l-4 border-l-purple-500 border-y border-r border-slate-800 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-bold text-white text-base">Grade B Tier (The Squeezed Middle)</h4>
+                            <span class="text-xs font-bold text-purple-300 bg-purple-900/40 px-2.5 py-1 rounded-full">THB 864 / sq m</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong>Occupancy: 74.0% (Lowest Market-Wide).</strong> Legacy Grade B buildings lack ESG specs and face severe pressure as tenants upgrade to Grade A via 20%–30% net effective discounts or downsize to Grade C.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-l-4 border-l-teal-500 border-y border-r border-slate-800 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-bold text-white text-base">Grade C Tier (Defensive Value)</h4>
+                            <span class="text-xs font-bold text-teal-400 bg-teal-900/40 px-2.5 py-1 rounded-full">THB 542 / sq m</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong>Occupancy: 79.0% (Highest Market-Wide).</strong> Insulated by a complete absence of new supply additions and sustained demand from cost-driven local SMEs and overhead-conscious businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-4">
+                <h3 class="font-bold text-white text-base">Building Grade Historical Performance Matrix (Q2 2025 – Q2 2026)</h3>
+                <div class="overflow-x-auto border border-slate-800 rounded-2xl">
+                    <table class="w-full text-xs text-left text-slate-300 border-collapse">
+                        <thead class="bg-slate-900 text-slate-200 uppercase text-[11px] tracking-wider border-b border-slate-800">
+                            <tr>
+                                <th class="p-3">Building Grade</th>
+                                <th class="p-3">Q2 2025 Rent / Occ</th>
+                                <th class="p-3">Q3 2025 Rent / Occ</th>
+                                <th class="p-3">Q4 2025 Rent / Occ</th>
+                                <th class="p-3">Q1 2026 Rent / Occ</th>
+                                <th class="p-3">Q2 2026 Rent / Occ</th>
+                                <th class="p-3">Structural Positioning & Demand Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800 bg-slate-950/60">
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-brandBlue-400">Grade A / A+</td>
+                                <td class="p-3">THB 1,229 | 77.1%</td>
+                                <td class="p-3">THB 1,241 | 77.1%</td>
+                                <td class="p-3">THB 1,247 | 77.7%</td>
+                                <td class="p-3">THB 1,238 | 78.0%</td>
+                                <td class="p-3 font-bold text-white">THB 1,268 | 77.0%</td>
+                                <td class="p-3">Captures MNC flight to quality; occupancy diluted by new supply wave (-8.5% occ drop in A+ in 2025 per Krungsri).</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-purple-300">Grade B (Squeezed)</td>
+                                <td class="p-3">THB 866 | 74.0%</td>
+                                <td class="p-3">THB 863 | 74.1%</td>
+                                <td class="p-3">THB 865 | 74.7%</td>
+                                <td class="p-3">THB 856 | 76.0%</td>
+                                <td class="p-3 font-bold text-amber-300">THB 864 | 74.0%</td>
+                                <td class="p-3">The Squeezed Middle: Weakest occupancy; losing corporate tenants to discounted Grade A and cost-cutters to Grade C.</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-teal-400">Grade C (Defensive)</td>
+                                <td class="p-3">THB 542 | 80.5%</td>
+                                <td class="p-3">THB 547 | 80.1%</td>
+                                <td class="p-3">THB 545 | 81.3%</td>
+                                <td class="p-3">THB 542 | 81.0%</td>
+                                <td class="p-3 font-bold text-teal-300">THB 542 | 79.0%</td>
+                                <td class="p-3">Defensive Value Tier: Highest occupancy market-wide due to zero new supply additions and SME overhead reduction.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-03" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-6">
+            <div class="flex items-center space-x-3">
+                <span class="bg-brandBlue-500/20 text-brandBlue-300 font-bold px-3 py-1 rounded-full text-xs border border-brandBlue-500/30">SECTION 05</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• SUB-MARKET GRANULARITY</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">Sub-Market Divergence: Core CBD vs. Non-CBD Decentralization Corridors</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Commercial performance varies dramatically across Bangkok's primary office corridors. While Silom–Sathorn–Rama IV experienced headline asking rate increases due to mega-projects, Sukhumvit 21 (Asoke) achieved the highest CBD occupancy (80.0%) by executing tactical downward headline rate adjustments to THB 898/sq m.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-7 bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 space-y-3">
+                    <div>
+                        <h3 class="font-bold text-white text-base">Sub-Market Benchmark Asking Rents & Occupancy Rates (Q2 2026)</h3>
+                        <p class="text-xs text-slate-400">Comparative breakdown across core commercial corridors in Bangkok</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="subMarketCorridorChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 space-y-3">
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-purple-500/40 transition-colors">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-bold text-white text-xs">Ploenchit – Chidlom – Wireless</span>
+                            <span class="text-xs font-bold text-purple-300">THB 1,075 / 75.0% Occ</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400">Trophy prestige core anchored by Gaysorn Tower (THB 1,500–1,600), Park Ventures (96% Occ at THB 1,500), and One City Centre (OCC).</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-brandBlue-500/40 transition-colors">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-bold text-white text-xs">Silom – Sathorn – Rama IV</span>
+                            <span class="text-xs font-bold text-brandBlue-400">THB 1,018 / 74.0% Occ</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400">Epicenter of mega-project supply. Transformed by One Bangkok (300k+ sq m) and Central Park Offices at Dusit Central Park.</p>
+                    </div>
+
+                    <div class="bg-purple-950/40 p-4 rounded-xl border border-purple-500/40">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-bold text-purple-300 text-xs flex items-center">
+                                <i class="fa-solid fa-star text-amber-400 mr-1.5"></i> Nana – Asoke – Phrom Phong (Focus)
+                            </span>
+                            <span class="text-xs font-bold text-teal-400">THB 898 / 80.0% Occ</span>
+                        </div>
+                        <p class="text-[11px] text-slate-300">Highest CBD occupancy rate. Defensive rate adjustments preserved occupancy while surrounding corridors dipped below 75%.</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-bold text-white text-xs">Petchburi – Rama IX – Ratchada</span>
+                            <span class="text-xs font-bold text-teal-300">THB 728 / 82.0% Occ</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400">Bangkok's "New CBD" and top-performing decentralized hub. Preferred by Chinese tech, EV firms, and cloud data operators.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-4">
+                <h3 class="font-bold text-white text-base">Sub-Market Corridor Comparison Matrix (Q1 2025 – Q2 2026)</h3>
+                <div class="overflow-x-auto border border-slate-800 rounded-2xl">
+                    <table class="w-full text-xs text-left text-slate-300 border-collapse">
+                        <thead class="bg-slate-900 text-slate-200 uppercase text-[11px] tracking-wider border-b border-slate-800">
+                            <tr>
+                                <th class="p-3">Sub-Market Corridor</th>
+                                <th class="p-3">Classification</th>
+                                <th class="p-3">Q1 2025 Rent / Occ</th>
+                                <th class="p-3">Q2 2025 Rent / Occ</th>
+                                <th class="p-3">Q4 2025 Rent / Occ</th>
+                                <th class="p-3">Q1 2026 Rent / Occ</th>
+                                <th class="p-3">Q2 2026 Rent / Occ</th>
+                                <th class="p-3">QoQ Rent & Occ Change (Q2 2026)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800 bg-slate-950/60">
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Ploenchit – Chidlom – Wireless</td>
+                                <td class="p-3 font-semibold text-purple-300">Core CBD</td>
+                                <td class="p-3">THB 1,091 | 76.0%</td>
+                                <td class="p-3">THB 1,062 | 76.0%</td>
+                                <td class="p-3">THB 1,075 | 75.0%</td>
+                                <td class="p-3">THB 1,072 | 74.0%</td>
+                                <td class="p-3 font-bold text-white">THB 1,075 | 75.0%</td>
+                                <td class="p-3 text-teal-300">Rent: +0.3% | Occ: +0.3% pts</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3 font-bold text-white">Silom – Sathorn – Rama IV</td>
+                                <td class="p-3 font-semibold text-purple-300">Core CBD</td>
+                                <td class="p-3">THB 971 | 75.5%</td>
+                                <td class="p-3">THB 971 | 75.0%</td>
+                                <td class="p-3">THB 988 | 75.0%</td>
+                                <td class="p-3">THB 988 | 75.4%</td>
+                                <td class="p-3 font-bold text-amber-300">THB 1,018 | 74.0%</td>
+                                <td class="p-3 text-amber-400">Rent: +3.0% | Occ: -1.4% pts</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60 bg-purple-950/20">
+                                <td class="p-3 font-bold text-purple-300">Nana – Asoke – Phrom Phong</td>
+                                <td class="p-3 font-semibold text-purple-300">Core CBD (Focus)</td>
+                                <td class="p-3">THB 944 | 79.7%</td>
+                                <td class="p-3">THB 933 | 81.0%</td>
+                                <td class="p-3">THB 920 | 79.0%</td>
+                                <td class="p-3">THB 908 | 79.3%</td>
+                                <td class="p-3 font-bold text-teal-300">THB 898 | 80.0%</td>
+                                <td class="p-3 text-teal-400">Rent: -1.1% | Occ: +0.7% pts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-4">
+                <h3 class="text-lg font-bold text-white flex items-center">
+                    <i class="fa-solid fa-award text-amber-400 mr-2"></i> Benchmark Prime & Grade A+ Asset Showcase
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[11px] font-bold text-teal-300 bg-teal-900/40 px-2 py-0.5 rounded">Ratchaprasong / Chidlom</span>
+                            <span class="text-xs font-bold text-white">THB 1,500 – 1,600</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Gaysorn Tower</h4>
+                        <p class="text-[11px] text-slate-400 mb-2">Grade A+ | LEED Gold | Direct BTS Skybridge</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Commands Bangkok's highest asking rent benchmark; fully integrated with luxury retail village and wellness lifestyle ecosystem.</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[11px] font-bold text-teal-300 bg-teal-900/40 px-2 py-0.5 rounded">Ploenchit</span>
+                            <span class="text-xs font-bold text-white">THB 1,300 – 1,500</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Park Ventures Ecoplex</h4>
+                        <p class="text-[11px] text-slate-400 mb-2">Grade A+ | LEED Platinum | Direct BTS Ploenchit</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Maintains outstanding operational occupancy of <strong class="text-teal-300">96%</strong> (GVREIT March 2026) due to eco-efficiency and prime connectivity.</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[11px] font-bold text-teal-300 bg-teal-900/40 px-2 py-0.5 rounded">Wireless / Rama IV</span>
+                            <span class="text-xs font-bold text-white">THB 1,200 – 1,500</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">One Bangkok (T3, T4, T5)</h4>
+                        <p class="text-[11px] text-slate-400 mb-2">Grade A+ | LEED Platinum & WELL Gold | MRT Lumphini</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Phase 1 (~300,000 sq m) reached 66% aggregate occupancy; anchored by major MNC relocations including HSBC and Baker McKenzie.</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[11px] font-bold text-teal-300 bg-teal-900/40 px-2 py-0.5 rounded">Ploenchit</span>
+                            <span class="text-xs font-bold text-white">THB 1,200 – 1,400</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">One City Centre (OCC)</h4>
+                        <p class="text-[11px] text-slate-400 mb-2">Grade A+ | LEED Gold & Fitwel | 61 Stories</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Thailand's tallest office tower; features rooftop hospitality (Akara Sky Hanuman) and 4 floors of JustCo luxury coworking.</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[11px] font-bold text-teal-300 bg-teal-900/40 px-2 py-0.5 rounded">Silom / Rama IV</span>
+                            <span class="text-xs font-bold text-white">THB 1,150 – 1,350</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Central Park Offices</h4>
+                        <p class="text-[11px] text-slate-400 mb-2">Grade A+ | Target LEED Gold / WELL | BTS Sala Daeng</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">60,000 sq m tower completed Q3 2025 within Dusit Central Park masterplan; secured major pharmaceutical anchor GSK.</p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[11px] font-bold text-teal-300 bg-teal-900/40 px-2 py-0.5 rounded">North Sathorn</span>
+                            <span class="text-xs font-bold text-white">THB 1,100</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Sathorn Square</h4>
+                        <p class="text-[11px] text-slate-400 mb-2">Grade A | Gold Certified | Direct BTS Chong Nonsi</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Maintains solid 79% occupancy; classic financial corridor tower competing via active lifestyle amenity upgrades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-04" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-8">
+            <div class="flex items-center space-x-3">
+                <span class="bg-amber-500/20 text-amber-300 font-bold px-3 py-1 rounded-full text-xs border border-amber-500/30">SECTION 06</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• TENANT DEMOGRAPHICS & LEASING VELOCITY</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">Occupier Demographics, Sector Leasing & Lease Size Velocity</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Tenant demand across the Bangkok CBD is segmented by sector origins and capital sensitivity. Financial & Banking Services lead active leasing (26%), followed by Creative & Media (21%). Crucially, over 68% of transaction volume falls under 600 sq m, demonstrating that dividing large floorplates into modular sub-units achieves maximum leasing velocity.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 space-y-3">
+                    <div>
+                        <h3 class="font-bold text-white text-base">CBD Active Leasing Volume Share by Sector (%)</h3>
+                        <p class="text-xs text-slate-400">Sector representation across core Bangkok office leasing activity</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="sectorBreakdownChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 space-y-3">
+                    <div>
+                        <h3 class="font-bold text-white text-base">Transaction Volume Share by Lease Size Bracket (%)</h3>
+                        <p class="text-xs text-slate-400">Lease size velocity distribution highlighting sub-600 sq m demand</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="leaseSizeDistChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+                <h3 class="font-bold text-white text-lg">Target Tenant Personas & Operational Positioning</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-t-4 border-t-purple-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-purple-300 bg-purple-900/50 px-2.5 py-1 rounded-full uppercase">Persona 01 • 21% Share</span>
+                            <span class="text-xs font-bold text-amber-400">200–800 sq m</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Creative Agencies & Media Production</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong>Key Requirements:</strong> Soundproof suites, access to media studio infrastructure, 24/7 or extended HVAC options, and proximity to creative talent pools.
+                        </p>
+                        <div class="bg-purple-950/50 p-3 rounded-xl border border-purple-500/30 text-xs text-purple-200">
+                            <strong>Fit for GMM Grammy Place:</strong> Perfect Match due to GMM’s national media pedigree, in-house entertainment network, and 21st Fl auditorium/studio facilities.
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-t-4 border-t-brandBlue-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-brandBlue-300 bg-blue-900/50 px-2.5 py-1 rounded-full uppercase">Persona 02 • 16% Share</span>
+                            <span class="text-xs font-bold text-amber-400">300–1,200 sq m</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Technology & Digital Services</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong>Key Requirements:</strong> Turnkey pre-fitted suites, dual fiber optic redundancy backbones, high power density, and seamless MRT/BTS walkability for tech talent.
+                        </p>
+                        <div class="bg-blue-950/50 p-3 rounded-xl border border-blue-500/30 text-xs text-blue-200">
+                            <strong>Fit for GMM Grammy Place:</strong> High Match if pre-fitted "plug-and-play" units are made available to avoid upfront fitout Capex outlays.
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-t-4 border-t-teal-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-teal-300 bg-teal-900/50 px-2.5 py-1 rounded-full uppercase">Persona 03 • 15% Share</span>
+                            <span class="text-xs font-bold text-amber-400">150–500 sq m</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Value-Conscious Professional Services</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong>Key Requirements:</strong> Professional corporate lobby entrance, central Asoke business address, and 35%–45% rental cost savings vs surrounding Grade A towers.
+                        </p>
+                        <div class="bg-teal-950/50 p-3 rounded-xl border border-teal-500/30 text-xs text-teal-200">
+                            <strong>Fit for GMM Grammy Place:</strong> Strong Match for cost-sensitive law firms, accounting practices, and consultancies seeking high-grade location efficiency.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto border border-slate-800 rounded-2xl pt-2">
+                <table class="w-full text-xs text-left text-slate-300 border-collapse">
+                    <thead class="bg-slate-900 text-slate-200 uppercase text-[11px] tracking-wider border-b border-slate-800">
+                        <tr>
+                            <th class="p-3.5">Scale Tier</th>
+                            <th class="p-3.5">Unit Area Requirement</th>
+                            <th class="p-3.5">Headcount Capacity</th>
+                            <th class="p-3.5">Target Building Formats</th>
+                            <th class="p-3.5">Representative Asoke / CBD Unit Benchmarks</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 bg-slate-950/60">
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-purple-300">Tier 1: Anchor HQ</td>
+                            <td class="p-3.5 font-semibold text-white">1,000 – 5,000+ sq m</td>
+                            <td class="p-3.5">100 – 500+ employees</td>
+                            <td class="p-3.5">CBD Grade A/A+ & Large-Plate Grade B+</td>
+                            <td class="p-3.5 text-slate-300">GMM Grammy Place (1,660 sq m full floor); Serm Mit Tower (3,760 sq m full floor)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-brandBlue-400">Tier 2: Mid-Sized Corporate</td>
+                            <td class="p-3.5 font-semibold text-white">250 – 999 sq m</td>
+                            <td class="p-3.5">25 – 100 employees</td>
+                            <td class="p-3.5">CBD Grade A & Grade B/B+ (Bare/Fitted)</td>
+                            <td class="p-3.5 text-slate-300">GMM Grammy Place listings (263 sq m, 339 sq m, 391 sq m, 691 sq m suites)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60 bg-purple-950/20">
+                            <td class="p-3.5 font-bold text-teal-400">Tier 3: SME & Studio Suite</td>
+                            <td class="p-3.5 font-semibold text-teal-300">60 – 249 sq m</td>
+                            <td class="p-3.5">6 – 25 employees</td>
+                            <td class="p-3.5">Subdivided Grade B/B+ & Fitted Grade A</td>
+                            <td class="p-3.5 text-slate-300">GMM Grammy Place (63 sq m, 68 sq m, 101 sq m, 136 sq m, 180 sq m units)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/60">
+                            <td class="p-3.5 font-bold text-amber-400">Tier 4: Micro & Agile Suite</td>
+                            <td class="p-3.5 font-semibold text-white">15 – 59 sq m</td>
+                            <td class="p-3.5">1 – 15 employees</td>
+                            <td class="p-3.5">Coworking Centers & Podium Service Retail</td>
+                            <td class="p-3.5 text-slate-300">GMM Grammy Place ground retail (33 sq m); JustCo / Regus coworking private rooms</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="section-05" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-purple-900/40 space-y-8">
+            <div class="flex items-center space-x-3">
+                <span class="bg-purple-500/20 text-purple-300 font-bold px-3 py-1 rounded-full text-xs border border-purple-500/30">SECTION 07</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• ASOKE & GMM GRAMMY PLACE MASTER DATASET</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">GMM Grammy Place Specifications & Asoke Peer Competitive Set</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Raw asset specification database for GMM Grammy Place (50 Sukhumvit 21 Road) alongside an interactive, searchable benchmark set of competing office developments within the Asoke Montri catchment.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Tenure & Asset Grade</span>
+                    <span class="font-bold text-white text-sm block">Freehold Commercial Asset</span>
+                    <span class="text-[11px] text-purple-300 font-semibold mt-0.5 block">GMM Grammy Place (50 Sukhumvit 21)</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Asking Rent Benchmark</span>
+                    <span class="font-bold text-white text-sm block">THB 680 – 750 / sq m / mo</span>
+                    <span class="text-[11px] text-amber-400 font-semibold mt-0.5 block">Retail: THB 1,100 / sq m</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Building Scale & Area</span>
+                    <span class="font-bold text-white text-sm block">43 Storeys</span>
+                    <span class="text-[11px] text-teal-300 font-semibold mt-0.5 block">37,000–38,587 sq m NLA</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Floor Plate & Ceiling</span>
+                    <span class="font-bold text-white text-sm block">1,000–1,660 sq m Plate</span>
+                    <span class="text-[11px] text-slate-300 font-semibold mt-0.5 block">2.60m Ceiling Height</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">HVAC & Operating Tiers</span>
+                    <span class="font-bold text-white text-sm block">4 Schedule Tiers</span>
+                    <span class="text-[11px] text-purple-300 font-semibold mt-0.5 block">Flexible A/C up to 21:00</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Parking Infrastructure</span>
+                    <span class="font-bold text-white text-sm block">700+ to 850 Bays</span>
+                    <span class="text-[11px] text-slate-300 font-semibold mt-0.5 block">1:100 Ratio (Extra THB 2,000/mo)</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Transit Distances</span>
+                    <span class="font-bold text-white text-sm block">Quad-Modal Access</span>
+                    <span class="text-[11px] text-teal-300 font-semibold mt-0.5 block">MRT Phetchaburi 400m / BTS 750m</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Utility Billing Rates</span>
+                    <span class="font-bold text-white text-sm block">Competitive Rates</span>
+                    <span class="text-[11px] text-teal-400 font-semibold mt-0.5 block">Elec: THB 4.5 | Water: THB 20.5</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Vertical Transport</span>
+                    <span class="font-bold text-white text-sm block">13 Total Elevators</span>
+                    <span class="text-[11px] text-slate-300 font-semibold mt-0.5 block">11 Passenger (Schindler)</span>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+                    <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">Key Internal Amenities</span>
+                    <span class="font-bold text-white text-sm block">21st Fl Auditorium</span>
+                    <span class="text-[11px] text-amber-400 font-semibold mt-0.5 block">Helipad, Starbucks, 7-11</span>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-4">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <h3 class="font-bold text-white text-lg">Asoke (Sukhumvit 21) Office Competitive Matrix</h3>
+                    <div class="w-full sm:w-72">
+                        <input type="text" id="tableSearch" placeholder="Filter by building name or rent..." class="w-full px-3.5 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs font-semibold text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto border border-slate-800 rounded-2xl max-h-[460px] overflow-y-auto">
+                    <table class="w-full text-xs text-left text-slate-300 border-collapse">
+                        <thead class="bg-slate-900 text-slate-200 uppercase text-[11px] tracking-wider border-b border-slate-800 sticky top-0 z-10">
+                            <tr>
+                                <th class="p-3.5 bg-slate-900">Building Name</th>
+                                <th class="p-3.5 bg-slate-900">Grade & Vintage</th>
+                                <th class="p-3.5 bg-slate-900">Asking Rent (THB/sq m/mo)</th>
+                                <th class="p-3.5 bg-slate-900">Estimated Occupancy</th>
+                                <th class="p-3.5 bg-slate-900">Key Characteristics & Technical Features</th>
+                            </tr>
+                        </thead>
+                        <tbody id="competitorTableBody" class="divide-y divide-slate-800 bg-slate-950/60">
+                            <tr class="hover:bg-purple-900/20 bg-purple-950/30">
+                                <td class="p-3.5 font-bold text-purple-300 flex items-center">
+                                    <i class="fa-solid fa-star text-amber-400 mr-2"></i> GMM Grammy Place
+                                </td>
+                                <td class="p-3.5 font-semibold text-purple-400">Grade B+ (1999)</td>
+                                <td class="p-3.5 font-bold text-white">THB 680 – 750</td>
+                                <td class="p-3.5 font-bold text-teal-400">~81%</td>
+                                <td class="p-3.5">Flagship media hub; dual MRT/BTS access; ~1,000 sqm floorplates; retail podium; high brand equity; dual Soi 21/23 access</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Serm-Mit Tower</td>
+                                <td class="p-3.5">Grade B+ (1993)</td>
+                                <td class="p-3.5 font-bold text-white">THB 720 – 780</td>
+                                <td class="p-3.5 font-bold text-teal-400">~82%</td>
+                                <td class="p-3.5">Established corporate building; strong Japanese tenant base; multi-level parking; largest plate in Asoke (3,760 sq m)</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Ocean Tower 2</td>
+                                <td class="p-3.5">Grade B</td>
+                                <td class="p-3.5 font-bold text-white">THB 620 – 680</td>
+                                <td class="p-3.5 font-bold text-amber-400">~76%</td>
+                                <td class="p-3.5">Competitive rental rates; strata-title mix; cost-focused occupier target; Soi Sukhumvit 19/21 connectivity</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Interchange 21</td>
+                                <td class="p-3.5">Grade A</td>
+                                <td class="p-3.5 font-bold text-white">THB 1,000 – 1,150</td>
+                                <td class="p-3.5 font-bold text-teal-300">~88%</td>
+                                <td class="p-3.5">Direct skybridge link to BTS Asoke & MRT Sukhumvit; integrated retail mall podium; prime enterprise tenant base</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Singha Complex</td>
+                                <td class="p-3.5">Grade A+ (LEED Gold)</td>
+                                <td class="p-3.5 font-bold text-white">THB 1,150 – 1,300</td>
+                                <td class="p-3.5 font-bold text-teal-300">~90%</td>
+                                <td class="p-3.5">Direct MRT Phetchaburi connection; LEED Gold certified; high-end retail options; ultra-prime specifications</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">K Tower (Towers A & B)</td>
+                                <td class="p-3.5">Grade B (Reno 2010)</td>
+                                <td class="p-3.5 font-bold text-white">THB 620 – 680</td>
+                                <td class="p-3.5 font-bold text-teal-400">~80%</td>
+                                <td class="p-3.5">Tower A 24Fl / Tower B 36Fl; MRT Phetchaburi 400m; water-cooled package A/C; sub-leases ~THB 550/sq m</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Jasmine City Building</td>
+                                <td class="p-3.5">Grade B+ Mixed-Use</td>
+                                <td class="p-3.5 font-bold text-white">THB 750 – 900</td>
+                                <td class="p-3.5 font-bold text-teal-400">~83%</td>
+                                <td class="p-3.5">High-rise office & serviced apartment complex; BTS Asok / MRT Sukhumvit interchange corner retail</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Fico Place</td>
+                                <td class="p-3.5">Grade B Boutique</td>
+                                <td class="p-3.5 font-bold text-white">THB 650 – 900</td>
+                                <td class="p-3.5 font-bold text-amber-400">~78%</td>
+                                <td class="p-3.5">Boutique floor plates; popular with small fitted suites & creative studios along Asoke Montri Road</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">BB Building</td>
+                                <td class="p-3.5">Grade B Mid-Rise</td>
+                                <td class="p-3.5 font-bold text-white">THB 650 – 700</td>
+                                <td class="p-3.5 font-bold text-teal-400">~81%</td>
+                                <td class="p-3.5">Mid-rise commercial tower; strong SME tenant base, medical clinics, and bank branch network</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Stecon Tower (Sino-Thai)</td>
+                                <td class="p-3.5">Grade B High-Rise</td>
+                                <td class="p-3.5 font-bold text-white">THB 620 – 650</td>
+                                <td class="p-3.5 font-bold text-teal-400">~80%</td>
+                                <td class="p-3.5">Established engineering HQ tower; steady long-term corporate occupiers on Sukhumvit 21 Road</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="p-3.5 font-bold text-white">Rajapark & 253 Asoke</td>
+                                <td class="p-3.5">Grade B / C+ Value</td>
+                                <td class="p-3.5 font-bold text-white">THB 495 – 530</td>
+                                <td class="p-3.5 font-bold text-teal-400">~82%</td>
+                                <td class="p-3.5">Entry-level pricing along Asoke Montri; subdivided small units; cost-focused domestic SMEs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-06" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-8">
+            <div class="flex items-center space-x-3">
+                <span class="bg-teal-500/20 text-teal-300 font-bold px-3 py-1 rounded-full text-xs border border-teal-500/30">SECTION 08</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• FINANCIAL MECHANICS & CONCESSION MODELING</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">The Net Effective Rent Gap</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Commercial leases in Bangkok are typically structured as rolling 3-year agreements (to avoid the 1.1% Land Department registration fee for long leases) with rent split 40/60 between space rent and service fees. While headline asking rents appear firm, extended rent-free periods (up to 6 months) and landlord fit-out subsidies drastically compress <strong class="text-teal-300">true net effective rents</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900/90 p-6 rounded-2xl border border-slate-800">
+                <div class="lg:col-span-6 space-y-5">
+                    <h3 class="text-lg font-bold text-teal-300 flex items-center">
+                        <i class="fa-solid fa-calculator mr-2"></i> Interactive Effective Rent Calculator
+                    </h3>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-white mb-1">
+                            <label for="headlineRentInput">Headline Asking Rent (THB/sq m/month)</label>
+                            <span id="headlineRentVal" class="text-teal-300 font-bold">THB 1,200</span>
+                        </div>
+                        <input type="range" id="headlineRentInput" min="700" max="1600" step="25" value="1200"
+                            class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-teal-500">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-white mb-1">
+                            <label for="rentFreeInput">Rent-Free Abatement (Months per 36-mo lease)</label>
+                            <span id="rentFreeVal" class="text-teal-300 font-bold">4.0 Months</span>
+                        </div>
+                        <input type="range" id="rentFreeInput" min="0" max="8" step="0.5" value="4"
+                            class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-teal-500">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-white mb-1">
+                            <label for="fitoutAllowanceInput">Landlord Fit-Out Subsidy (THB/sq m total)</label>
+                            <span id="fitoutAllowanceVal" class="text-teal-300 font-bold">THB 3,000</span>
+                        </div>
+                        <input type="range" id="fitoutAllowanceInput" min="0" max="10000" step="500" value="3000"
+                            class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-teal-500">
+                    </div>
+
+                    <div class="p-3 bg-slate-950 rounded-lg text-xs text-slate-300 space-y-1">
+                        <div class="flex justify-between"><span>Base Term:</span> <strong class="text-white">36 Months (3 Years)</strong></div>
+                        <div class="flex justify-between"><span>Estimated Fit-out Capex:</span> <strong class="text-white">THB 18,000 / sq m</strong></div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-gradient-to-br from-purple-950 to-slate-900 p-6 rounded-xl border border-teal-500/30 text-center space-y-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Headline vs Effective Monthly Rent</span>
+                        <div class="flex justify-center items-baseline space-x-3 mt-2">
+                            <span id="displayHeadline" class="text-lg text-slate-400 line-through font-semibold">THB 1,200</span>
+                            <span id="displayEffective" class="text-3xl sm:text-4xl font-black text-teal-300">THB 983</span>
+                            <span class="text-xs text-slate-300 font-semibold">/ sq m / mo</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 text-left border-t border-slate-800 pt-4">
+                        <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                            <span class="text-[10px] font-bold text-slate-300 uppercase block">Direct Savings Discount</span>
+                            <span id="displayDiscountPct" class="text-xl font-extrabold text-amber-400">18.1%</span>
+                        </div>
+                        <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                            <span class="text-[10px] font-bold text-slate-300 uppercase block">Amortized Subsidized Rent</span>
+                            <span id="displaySavingsPerSqM" class="text-xl font-extrabold text-emerald-400">THB 217 <span class="text-[10px] font-normal">saved/mo</span></span>
+                        </div>
+                    </div>
+
+                    <div class="text-xs text-slate-300 text-left bg-slate-950 p-3 rounded-lg">
+                        <i class="fa-solid fa-circle-info text-teal-300 mr-1"></i>
+                        <span>This model illustrates why occupiers in 2026 can upgrade to Grade A+ space without expanding net real estate cash outflows.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Corporate Tenant Relocation vs. Renewal Decision Flow</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 border-t-4 border-t-teal-500 space-y-2">
+                        <div class="font-bold text-teal-300 text-sm">1. Legacy Lease Expiry</div>
+                        <p class="text-slate-300">Tenant evaluates existing Grade B/A office space 12-18 months prior to contract expiration.</p>
+                        <div class="bg-slate-950 p-2 rounded text-slate-300 font-mono">Trigger: High Capex or ESG Compliance Mandate</div>
+                    </div>
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 border-t-4 border-t-brandBlue-500 space-y-2">
+                        <div class="font-bold text-brandBlue-400 text-sm">2. Benchmark Market RFP</div>
+                        <p class="text-slate-300">Compare existing renewal rates against newly completed Grade A+ developments offering landlord turnkey fit-outs.</p>
+                        <div class="bg-slate-950 p-2 rounded text-slate-300 font-mono">Target: Min 4-6 Months Rent-Free + Fit-Out Subsidy</div>
+                    </div>
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 border-t-4 border-t-amber-500 space-y-2">
+                        <div class="font-bold text-amber-400 text-sm">3. Financial Closing</div>
+                        <p class="text-slate-300">Secure 20%–30% net effective discount at new Green asset OR force existing landlord into steep renewal discount.</p>
+                        <div class="bg-slate-950 p-2 rounded text-slate-300 font-mono">Outcome: Cost-Neutral ESG Upgrade</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-outlook" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-8">
+            <div class="flex items-center space-x-3">
+                <span class="bg-brandBlue-500/20 text-brandBlue-300 font-bold px-3 py-1 rounded-full text-xs border border-brandBlue-500/30">SECTION 09</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• MARKET OUTLOOK (2026–2030)</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">Pipeline Contraction & Market Stabilization</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    The heavy delivery cycle of 2024–2026 is drawing to a close. Total forward pipeline supply peaked at 1.10 million sq m in early 2025 and has contracted to <strong class="text-teal-300">612,000 sq m</strong> through 2031 (with only 197,000 sq m due in H2 2026). Post-2026, under-construction rental stock drops to just 300,000 sq m, setting the stage for gradual vacancy absorption between 2027 and 2029.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 space-y-3">
+                <div>
+                    <h3 class="font-bold text-white text-base">Forward Construction Pipeline & Scheduled Deliveries (sq m)</h3>
+                    <p class="text-xs text-slate-400">Sharply contracting new supply incoming post-2026</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="pipelineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold text-white">Strategic Action Framework by Stakeholder Segment</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-t-4 border-t-teal-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-teal-400 font-bold text-base">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>For Corporate Occupiers</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                            <li><strong class="text-white">Peak Leverage Window:</strong> Q4 2026 – Q4 2027 represents the cyclical peak of tenant bargaining power.</li>
+                            <li><strong class="text-white">Negotiate Concessions:</strong> Require landlord-funded turnkey fit-outs (saving THB 15,000–20,000/sq m upfront) and 6+ months rent-free.</li>
+                            <li><strong class="text-white">ESG Flight:</strong> Leverage high vacancy in newly completed towers to secure green-certified space at net effective discounts.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-t-4 border-t-brandBlue-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-brandBlue-400 font-bold text-base">
+                            <i class="fa-solid fa-building-user"></i>
+                            <span>For Asset Owners (10+ Yrs)</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                            <li><strong class="text-white">Green Retrofitting:</strong> Upgrade chilled-water VAV systems and secure LEED/WELL certifications to qualify for corporate RFPs.</li>
+                            <li><strong class="text-white">Turnkey Suites:</strong> Subdivide floor plates into 150–500 sq m fitted suites to capture capex-averse SMEs.</li>
+                            <li><strong class="text-white">Adaptive Reuse:</strong> Consider converting secondary assets without transit links into hospitality or medical facilities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border-t-4 border-t-amber-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-amber-400 font-bold text-base">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <span>For Capital Investors</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                            <li><strong class="text-white">K-Shaped Recovery:</strong> Yield resilience will accrue strictly to transit-linked, green-certified mixed-use assets.</li>
+                            <li><strong class="text-white">REIT Stability:</strong> Top-tier transit-linked REITs (e.g., GVREIT at ~7.6% trailing yield) offer defensive income.</li>
+                            <li><strong class="text-white">Pipeline Relief:</strong> Acute supply pressure eases significantly after 2026, positioning core CBD assets for absorption.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-07" class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-800 space-y-8">
+            <div class="flex items-center space-x-3">
+                <span class="bg-purple-500/20 text-purple-300 font-bold px-3 py-1 rounded-full text-xs border border-purple-500/30">SECTION 10</span>
+                <span class="text-xs text-slate-400 uppercase font-bold tracking-widest">• PESTEL FRAMEWORK & SWOT ANALYSIS</span>
+            </div>
+
+            <div class="max-w-4xl space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white leading-snug">PESTEL Analysis & Comprehensive GMM Grammy Place SWOT</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Analytical framework synthesizing macro-environmental dynamics governing the Bangkok commercial market alongside an expanded asset-level SWOT matrix for GMM Grammy Place and the Grade B Asoke corridor.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="font-bold text-white text-lg">PESTEL Analysis: Bangkok Office Market & GMM Grammy Place</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center space-x-2 text-brandBlue-400 font-bold text-sm">
+                            <i class="fa-solid fa-landmark"></i>
+                            <span>Political Factors</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed list-disc list-inside">
+                            <li>BOI digital incentives for tech & media investment.</li>
+                            <li>Smart Visa programs attracting foreign talent.</li>
+                            <li>Municipal zoning & Asoke infrastructure push.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center space-x-2 text-teal-400 font-bold text-sm">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Economic Factors</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed list-disc list-inside">
+                            <li>GDP growth (~2.5-2.8%) driving corporate cost control.</li>
+                            <li>Flight-to-Value migration benefiting Grade B+ assets.</li>
+                            <li>Inflationary pressure on operational overheads & electricity.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center space-x-2 text-amber-400 font-bold text-sm">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Social & Workforce</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed list-disc list-inside">
+                            <li>Hybrid working adoption (3+2 office/home ratio).</li>
+                            <li>Gen Z preference for transit-connected hubs.</li>
+                            <li>Workplace wellness and lifestyle integration.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center space-x-2 text-purple-400 font-bold text-sm">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Technological Factors</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed list-disc list-inside">
+                            <li>Demand for plug-and-play digital workspace.</li>
+                            <li>Media studio & content production space integration.</li>
+                            <li>Smart building access control & HVAC automation.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center space-x-2 text-teal-300 font-bold text-sm">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>Environmental & ESG</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed list-disc list-inside">
+                            <li>Corporate ESG mandates requiring green credentials.</li>
+                            <li>Low-Capex EDGE/LEED EBOM retrofits for Grade B.</li>
+                            <li>Energy efficiency upgrades (LED, VFD, smart HVAC).</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center space-x-2 text-rose-400 font-bold text-sm">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <span>Legal & Regulatory</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed list-disc list-inside">
+                            <li>Thai Land & Building Tax compliance.</li>
+                            <li>Foreign Business Act restrictions on commercial leasing.</li>
+                            <li>Workplace health, safety, and fire code compliance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-xs space-y-1">
+                        <strong class="text-brandBlue-400 block font-bold">Political & Infrastructure Drivers:</strong>
+                        <p class="text-slate-300 leading-relaxed">
+                            Government incentives under Thailand 4.0 and Thailand Film/Media Board schemes encourage foreign digital agencies, tech startups, and producers to establish central Bangkok operations. Infrastructure expansion (MRT Orange Line integration at Thailand Cultural Centre/Phetchaburi) reinforces Asoke as a top-tier multi-modal transit hub.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-xs space-y-1">
+                        <strong class="text-teal-400 block font-bold">Economic & Fitout Capex Dynamics:</strong>
+                        <p class="text-slate-300 leading-relaxed">
+                            Mid-tier earnings pressure forces tenants to evaluate total cost of occupancy (TCO). High-rent Grade A options (THB 1,200+/sq m) are increasingly viewed as non-essential overheads compared to Grade B+ assets (THB 680–750/sq m). High tenant-funded fitout costs (THB 15,000–20,000/sq m) accelerate demand for landlord pre-fitted suites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-4">
+                <h3 class="font-bold text-white text-lg">Comprehensive SWOT Analysis: GMM Grammy Place</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-900/90 p-6 rounded-2xl border-t-4 border-t-teal-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-teal-400 font-bold text-base">
+                            <i class="fa-solid fa-shield-halved text-lg"></i>
+                            <span>STRENGTHS (Internal Factors)</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2.5 leading-relaxed">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-check text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Unrivaled Brand Equity & Heritage:</strong> Headquarters of GMM Grammy, offering organic appeal for creative, digital, and media occupiers.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-check text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Strategic Dual-Transit Connectivity:</strong> ~400m from MRT Phetchaburi / ARL Makkasan and within short transit to BTS Asoke / MRT Sukhumvit. Quad-modal access with dual Soi 21/23 entrances.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-check text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Substantial Cost Advantage:</strong> At THB 680–750/sq m, provides a 35% to 45% rental discount relative to nearby Grade A developments (Singha Complex, Interchange 21).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-check text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Flexible Floorplate Layout:</strong> Efficient ~1,000 sq m floorplates with minimal structural columns enable sub-division into modular 150–500 sq m suites.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-check text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Integrated Retail & Amenities Podium:</strong> On-site food courts, Starbucks, 7-Eleven, bank branches, and 21st Fl Auditorium event spaces provide staff convenience.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-6 rounded-2xl border-t-4 border-t-amber-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-amber-400 font-bold text-base">
+                            <i class="fa-solid fa-triangle-exclamation text-lg"></i>
+                            <span>WEAKNESSES (Internal Factors)</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2.5 leading-relaxed">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-xmark text-amber-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Aging Infrastructure & MEP Systems:</strong> 1999 vintage; central A/C and elevator management lag behind modern Grade A smart technologies.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-xmark text-amber-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Absence of Green Certifications:</strong> Lacks LEED or EDGE certifications, excluding the asset from corporate RFPs with strict global ESG procurement rules.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-xmark text-amber-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Traditional Public Areas:</strong> Ground-floor entrance and elevator lobbies require modern architectural treatment to appeal to tech and creative occupiers.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-xmark text-amber-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Single-Tenant HQ Perception:</strong> External market perception that the building is strictly reserved for GMM internal group entities rather than multi-tenant leasing.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-6 rounded-2xl border-t-4 border-t-brandBlue-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-brandBlue-400 font-bold text-base">
+                            <i class="fa-solid fa-rocket text-lg"></i>
+                            <span>OPPORTUNITIES (External Factors)</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2.5 leading-relaxed">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-arrow-right text-brandBlue-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Capitalizing on "Flight-to-Value":</strong> Capture corporate tenants downsizing from expensive Grade A properties to maintain cost efficiency without compromising location quality.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-arrow-right text-brandBlue-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Turnkey "Plug & Play" Pre-Fitted Suites:</strong> Construct move-in-ready 150–400 sq m fitted offices, capturing a THB 850–900/sq m rent premium while eliminating tenant Capex barriers.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-arrow-right text-brandBlue-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Media & Studio Synergies:</strong> Offer office tenants preferential access to shared podcast studios, video editing suites, and GMM media event halls.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-arrow-right text-brandBlue-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Targeted ESG Energy Retrofit (EDGE Pathway):</strong> Implement LED lighting conversions, variable frequency drives (VFDs), and smart air filtration to achieve EDGE green certification at modest Capex.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-6 rounded-2xl border-t-4 border-t-purple-500 border-x border-b border-slate-800 space-y-3">
+                        <div class="flex items-center space-x-2 text-purple-300 font-bold text-base">
+                            <i class="fa-solid fa-shield-cat text-lg"></i>
+                            <span>THREATS (External Factors)</span>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2.5 leading-relaxed">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-exclamation text-purple-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>CBD Supply Expansion:</strong> Over 800,000 sq m of new Grade A office space entering the market triggers tenant displacement and widespread vacancy pressure.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-exclamation text-purple-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Grade B Vacancy Inflation:</strong> Marketwide Grade B vacancy approaching 26% intensifies price competition among neighboring buildings on Sukhumvit 21.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-exclamation text-purple-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Aggressive Landlord Concessions:</strong> Nearby Grade B landlords offering extended rent-free periods (3–5 months) and fitout subsidies to win new tenants.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-circle-exclamation text-purple-400 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Escalating Electricity Tariffs:</strong> Rising energy costs increase tenant total cost of occupancy in non-green certified assets.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-800/80 text-xs mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <p class="font-bold text-slate-200">Bangkok CBD Commercial Office Rental Market Research Dataset (2025–2026)</p>
+                <p class="text-slate-500 mt-0.5">Primary Source Synthesis: Knight Frank Thailand, CBRE, Cushman & Wakefield, JLL, Krungsri Research.</p>
+            </div>
+            <div class="text-right text-slate-500">
+                <p>Single-Page Application Reference Dashboard • Strictly for strategic data modeling and reference analysis.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center text-[16px] font-semibold text-white pb-6">
+            Prepared by <span class="accent-gold">Areewan C</span> &middot; Candidate – Head of Property Management - GEURT FAR CO., LTD.
+        </div>
+    </footer>
+
+    <script>
+        function wrapLabel(str, maxChars = 16) {
+            if (typeof str !== 'string') return str;
+            if (str.length <= maxChars) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxChars) {
+                    if (currentLine) lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            });
+            if (currentLine) lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const universalTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        const ctxSupply = document.getElementById('supplyWaveChart').getContext('2d');
+        const labelsSupply = ['Q4 2024', 'Q1 2025', 'Q2 2025', 'Q3 2025', 'Q4 2025', 'Q1 2026', 'Q2 2026'].map(l => wrapLabel(l));
+        new Chart(ctxSupply, {
+            type: 'bar',
+            data: {
+                labels: labelsSupply,
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Total Tracked Supply (M sq m)',
+                        data: [6.31, 6.31, 6.42, 6.49, 6.49, 6.54, 6.75],
+                        backgroundColor: '#3B82F6',
+                        borderRadius: 6,
+                        yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Overall Citywide Occupancy (%)',
+                        data: [79.5, 78.8, 78.0, 77.5, 77.0, 77.7, 76.4],
+                        borderColor: '#2DD4BF',
+                        backgroundColor: '#2DD4BF',
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { position: 'bottom', labels: { color: '#94A3B8', font: { size: 11 } } }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Supply (M sq m)', color: '#94A3B8', font: { size: 10 } },
+                        min: 6.0,
+                        max: 7.2
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        ticks: { color: '#94A3B8' },
+                        title: { display: true, text: 'Occupancy Rate (%)', color: '#94A3B8', font: { size: 10 } },
+                        min: 70,
+                        max: 85,
+                        grid: { drawOnChartArea: false }
+                    }
+                }
+            }
+        });
+
+        const ctxAbsorption = document.getElementById('greenNetAbsorptionChart').getContext('2d');
+        const labelsAbs = ['Q3 2025', 'Q4 2025', 'Q1 2026', 'Q2 2026'].map(l => wrapLabel(l));
+        new Chart(ctxAbsorption, {
+            type: 'bar',
+            data: {
+                labels: labelsAbs,
+                datasets: [
+                    {
+                        label: 'Green-Certified Stock (+sq m)',
+                        data: [45000, 60000, 80000, 92000],
+                        backgroundColor: '#2DD4BF',
+                        borderRadius: 6
+                    },
+                    {
+                        label: 'Non-Green Certified Stock (sq m)',
+                        data: [-12000, -25000, -10000, -16000],
+                        backgroundColor: '#F43F5E',
+                        borderRadius: 6
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { position: 'bottom', labels: { color: '#94A3B8', font: { size: 11 } } }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+                    y: {
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Net Absorption (sq m)', color: '#94A3B8', font: { size: 10 } }
+                    }
+                }
+            }
+        });
+
+        const ctxGrade = document.getElementById('gradeStratificationChart').getContext('2d');
+        const labelsGrade = ['Grade A / A+', 'Grade B (Squeezed Middle)', 'Grade C (Defensive)'].map(l => wrapLabel(l));
+        new Chart(ctxGrade, {
+            type: 'bar',
+            data: {
+                labels: labelsGrade,
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Avg Asking Rent (THB/sq m)',
+                        data: [1268, 864, 542],
+                        backgroundColor: ['#3B82F6', '#A855F7', '#14B8A6'],
+                        borderRadius: 6,
+                        yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Occupancy Rate (%)',
+                        data: [77.0, 74.0, 79.0],
+                        borderColor: '#F59E0B',
+                        backgroundColor: '#F59E0B',
+                        borderWidth: 3,
+                        pointRadius: 6,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { position: 'bottom', labels: { color: '#94A3B8', font: { size: 11 } } }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Asking Rent (THB/sq m)', color: '#94A3B8', font: { size: 10 } },
+                        min: 300,
+                        max: 1500
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        ticks: { color: '#94A3B8' },
+                        title: { display: true, text: 'Occupancy Rate (%)', color: '#94A3B8', font: { size: 10 } },
+                        min: 65,
+                        max: 85,
+                        grid: { drawOnChartArea: false }
+                    }
+                }
+            }
+        });
+
+        const ctxSubMarket = document.getElementById('subMarketCorridorChart').getContext('2d');
+        const labelsSub = [
+            'Ploenchit - Wireless',
+            'Silom - Sathorn - Rama IV',
+            'Nana - Asoke (Focus)',
+            'Petchburi - Rama IX',
+            'Non-CBD Decentralized'
+        ].map(l => wrapLabel(l));
+
+        new Chart(ctxSubMarket, {
+            type: 'bar',
+            data: {
+                labels: labelsSub,
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: 'Avg Asking Rent (THB/sq m)',
+                        data: [1075, 1018, 898, 728, 620],
+                        backgroundColor: ['#A855F7', '#3B82F6', '#2DD4BF', '#F59E0B', '#64748B'],
+                        borderRadius: 6,
+                        yAxisID: 'y'
+                    },
+                    {
+                        type: 'line',
+                        label: 'Occupancy Rate (%)',
+                        data: [75.0, 74.0, 80.0, 82.0, 78.0],
+                        borderColor: '#2DD4BF',
+                        backgroundColor: '#2DD4BF',
+                        borderWidth: 3,
+                        pointRadius: 5,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { position: 'bottom', labels: { color: '#94A3B8', font: { size: 11 } } }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Rent (THB/sq m)', color: '#94A3B8', font: { size: 10 } },
+                        min: 400,
+                        max: 1300
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        ticks: { color: '#94A3B8' },
+                        title: { display: true, text: 'Occupancy Rate (%)', color: '#94A3B8', font: { size: 10 } },
+                        min: 65,
+                        max: 90,
+                        grid: { drawOnChartArea: false }
+                    }
+                }
+            }
+        });
+
+        const ctxSector = document.getElementById('sectorBreakdownChart').getContext('2d');
+        const labelsSector = [
+            'Banking & Financial Services',
+            'Creative, Media & Ent.',
+            'Tech, Software & E-Com',
+            'Professional & Legal Services',
+            'Consumer Goods & Retail',
+            'Industrial & Logistics'
+        ].map(l => wrapLabel(l));
+
+        new Chart(ctxSector, {
+            type: 'bar',
+            data: {
+                labels: labelsSector,
+                datasets: [{
+                    label: 'CBD Active Leasing Share (%)',
+                    data: [26, 21, 16, 15, 12, 10],
+                    backgroundColor: ['#3B82F6', '#A855F7', '#2DD4BF', '#F59E0B', '#60A5FA', '#64748B'],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Transaction Share (%)', color: '#94A3B8', font: { size: 10 } },
+                        max: 30
+                    },
+                    y: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } }
+                }
+            }
+        });
+
+        const ctxLeaseSize = document.getElementById('leaseSizeDistChart').getContext('2d');
+        const labelsLeaseSize = [
+            '< 300 sq m',
+            '300 - 600 sq m',
+            '600 - 1,000 sq m',
+            '1,000 - 2,500 sq m',
+            '> 2,500 sq m'
+        ].map(l => wrapLabel(l));
+
+        new Chart(ctxLeaseSize, {
+            type: 'bar',
+            data: {
+                labels: labelsLeaseSize,
+                datasets: [{
+                    label: 'Transaction Volume Share (%)',
+                    data: [32, 36, 18, 10, 4],
+                    backgroundColor: ['#2DD4BF', '#3B82F6', '#A855F7', '#F59E0B', '#64748B'],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+                    y: {
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Volume Share (%)', color: '#94A3B8', font: { size: 10 } },
+                        max: 40
+                    }
+                }
+            }
+        });
+
+        document.getElementById('tableSearch').addEventListener('keyup', function() {
+            const filter = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#competitorTableBody tr');
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(filter) ? '' : 'none';
+            });
+        });
+
+        // --- INTERACTIVE NET EFFECTIVE RENT CALCULATOR ---
+        const headlineInput = document.getElementById('headlineRentInput');
+        const rentFreeInput = document.getElementById('rentFreeInput');
+        const fitoutAllowanceInput = document.getElementById('fitoutAllowanceInput');
+        const headlineValText = document.getElementById('headlineRentVal');
+        const rentFreeValText = document.getElementById('rentFreeVal');
+        const fitoutValText = document.getElementById('fitoutAllowanceVal');
+        const displayHeadline = document.getElementById('displayHeadline');
+        const displayEffective = document.getElementById('displayEffective');
+        const displayDiscountPct = document.getElementById('displayDiscountPct');
+        const displaySavingsPerSqM = document.getElementById('displaySavingsPerSqM');
+
+        function updateCalculator() {
+            const headline = parseFloat(headlineInput.value);
+            const rentFreeMonths = parseFloat(rentFreeInput.value);
+            const fitoutSubsidy = parseFloat(fitoutAllowanceInput.value);
+            const leaseTermMonths = 36;
+
+            headlineValText.textContent = `THB ${headline.toLocaleString()}`;
+            rentFreeValText.textContent = `${rentFreeMonths.toFixed(1)} Months`;
+            fitoutValText.textContent = `THB ${fitoutSubsidy.toLocaleString()}`;
+
+            const netRentAfterFree = headline * ((leaseTermMonths - rentFreeMonths) / leaseTermMonths);
+            const monthlyFitoutAmortization = fitoutSubsidy / leaseTermMonths;
+            const netEffectiveRent = Math.max(0, netRentAfterFree - monthlyFitoutAmortization);
+            const savingsPerSqM = headline - netEffectiveRent;
+            const discountPct = (savingsPerSqM / headline) * 100;
+
+            displayHeadline.textContent = `THB ${headline.toLocaleString()}`;
+            displayEffective.textContent = `THB ${Math.round(netEffectiveRent).toLocaleString()}`;
+            displayDiscountPct.textContent = `${discountPct.toFixed(1)}%`;
+            displaySavingsPerSqM.innerHTML = `THB ${Math.round(savingsPerSqM).toLocaleString()} <span class="text-[10px] font-normal">saved/mo</span>`;
+        }
+
+        headlineInput.addEventListener('input', updateCalculator);
+        rentFreeInput.addEventListener('input', updateCalculator);
+        fitoutAllowanceInput.addEventListener('input', updateCalculator);
+        updateCalculator();
+
+        // --- MARKET OUTLOOK: PIPELINE CHART ---
+        const ctxPipeline = document.getElementById('pipelineChart').getContext('2d');
+        new Chart(ctxPipeline, {
+            type: 'line',
+            data: {
+                labels: ['Q1 2025 Peak', 'Q4 2025', 'H1 2026 Completed', 'H2 2026 Remaining', '2027–2030 Under Construction'].map(wrapLabel),
+                datasets: [{
+                    label: 'Active Pipeline Stock (sq m)',
+                    data: [1100000, 851000, 612000, 197000, 300000],
+                    borderColor: '#2DD4BF',
+                    backgroundColor: 'rgba(45, 212, 191, 0.12)',
+                    fill: true,
+                    borderWidth: 3,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#2DD4BF',
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: universalTooltipConfig,
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+                    y: {
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: '#1E293B' },
+                        title: { display: true, text: 'Pipeline Volume (sq m)', color: '#94A3B8', font: { size: 10 } },
+                        min: 0,
+                        max: 1200000
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
